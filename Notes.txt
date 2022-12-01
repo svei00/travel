@@ -1,0 +1,10 @@
+1. Create React-App with: npx create-react-app my-app
+2. Create folder compoments
+   a. Create File Navbar.tsx
+   b. Create File navbar.css
+3. Install React Icon could be with: npm install react-icons --save
+4. Instal RouterDom: npm i react-router-dom 
+
+References:
+* https://www.youtube.com/watch?v=0dOSLhPzSGI&t=10s // Main Curse
+* https://www.youtube.com/watch?v=kvkAoCbTM3Q // Alternativas for Create React-App
