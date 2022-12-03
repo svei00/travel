@@ -2,8 +2,11 @@ import './navbar.css'
 import React from 'react'
 import { MenuItems } from './MenuItems'
 
-// interface navbar {
-//   Home: String;
+// interface Props {
+//   title: string;
+//   url: string;
+//   cName: string
+//   icon: string
 // }
 
 const Navbar = () => {
@@ -14,7 +17,7 @@ const Navbar = () => {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-              <a href={item.url}>
+              <a href={item.url} className={item.cName}>
                 {item.icon}{item.title}
               </a>
             </li>
