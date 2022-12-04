@@ -8,3 +8,5 @@
 References:
 * https://www.youtube.com/watch?v=0dOSLhPzSGI&t=10s // Main Curse
 * https://www.youtube.com/watch?v=kvkAoCbTM3Q // Alternativas for Create React-App
+* https://www.freecodecamp.org/news/how-to-build-reusable-components-with-props-in-react/ // Rehusable compoments
+* https://webdeasy.de/en/top-css-buttons-en/ // Buttons Examples

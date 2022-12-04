@@ -1,6 +1,8 @@
 import './navbar.css'
 import React from 'react'
 import { MenuItems } from './MenuItems'
+import Button from './Button'
+
 
 // interface Props {
 //   title: string;
@@ -23,6 +25,9 @@ const Navbar = () => {
             </li>
             )
           })}
+          <Button
+            title='Sign Up'
+          />
         </ul>
     </nav>
   )
