@@ -10,3 +10,6 @@ References:
 * https://www.youtube.com/watch?v=kvkAoCbTM3Q // Alternativas for Create React-App
 * https://www.freecodecamp.org/news/how-to-build-reusable-components-with-props-in-react/ // Rehusable compoments
 * https://webdeasy.de/en/top-css-buttons-en/ // Buttons Examples
+* https://dev.to/webdeasy/top-20-css-buttons-animations-f41 // More Examples
+* https://devdojo.com/tailwindcss/buttons // Tailwind buttons
+* https://fossheim.io/writing/posts/css-text-gradient/ //Gradient

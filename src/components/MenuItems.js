@@ -6,31 +6,31 @@ import { TbClick } from 'react-icons/tb'
 
 export const MenuItems = [
     {
-        title: "Home",
+        title: " Home",
         url: '/',
         cName: 'nav-links',
         icon: <RiHotelLine/>
     },
     {
-        title: "About",
+        title: " About",
         url: '/about',
         cName: 'nav-links',
         icon: <FcAbout/>
     },
     {
-        title: "Service",
+        title: " Service",
         url: '/service',
         cName: 'nav-links',
         icon: <MdOutlineRoomService/>
     },
     {
-        title: "Contact",
+        title: " Contact",
         url: '/contact',
         cName: 'nav-links',
         icon: <FiPhoneCall/>
     },
     {
-        title: "Sign Up",
+        title: " Sign Up",
         url: '/signup',
         cName: 'nav-links-mobile',
         icon: <TbClick/>
