@@ -1,9 +1,10 @@
-import './navbar.css'
-import { Component, React } from 'react'
-import { MenuItems } from './MenuItems'
-import Button from './Button'
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { GrClose } from 'react-icons/gr'
+import './navbar.css';
+import { Component, React } from 'react';
+import { MenuItems } from './MenuItems';
+import Button from './Button';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { GrClose } from 'react-icons/gr';
+import { Link } from 'react-router-dom';
 
 // interface Props {
 //   title: string;
@@ -34,9 +35,14 @@ class Navbar extends Component {
             {MenuItems.map((item, index) => {
               return (
                 <li key={index}>
+                {/*
+                // Was:
                 <a href={item.url} className={item.cName}>
                   {item.icon}{item.title}
-                </a>
+                </a> */}
+                <Link className={item.cName} to={item.url}>
+                  {item.icon}{item.title}                
+                </Link>
               </li>
               )
             })}

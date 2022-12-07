@@ -3,7 +3,9 @@
    a. Create File Navbar.tsx
    b. Create File navbar.css
 3. Install React Icon could be with: npm install react-icons --save
-4. Instal RouterDom: npm i react-router-dom 
+4. Install RouterDom: npm i react-router-dom
+   NPM: npm i react-router-dom
+   YARN: yarn add react-router-dom 
 
 References:
 * https://www.youtube.com/watch?v=0dOSLhPzSGI&t=10s // Main Curse
