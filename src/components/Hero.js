@@ -1,17 +1,20 @@
 import React from 'react';
+import Button from './Button';
 import './Hero.css';
 
-function Hero() {
+function Hero(props) {
   return (
     <>
-        <div className='Hero'>
-            <img alt='Hero Image' src=''/>
+        <div className={props.cName}>
+            <img alt='Hero' src={props.image}/>
 
             <div className='text'>
-                <h1>Test 1</h1>
-                <p>Test 2</p>
-                <a href='/'>
-                    Travel Plan
+                <h1>{props.title}</h1>
+                <p>{props.text}</p>
+                <a 
+                    href={props.url}
+                    className={props.btnClass}>
+                    <Button title={props.btn}/>
                 </a>            
             </div> 
         </div>    
