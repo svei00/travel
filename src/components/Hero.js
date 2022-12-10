@@ -9,7 +9,7 @@ function Hero(props) {
             <img alt='Hero' src={props.image}/>
 
             <div className='text'>
-                <h1>{props.title}</h1>
+                <h1>{props.title} {props.icon}</h1>
                 <p>{props.text}</p>
                 <a 
                     href={props.url}
