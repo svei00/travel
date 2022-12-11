@@ -14,7 +14,7 @@ function Hero(props) {
                 <a 
                     href={props.url}
                     className={props.btnClass}>
-                    <Button title={props.btn}/>
+                    <Button title={props.btn} icon={props.btnIcon}/>
                 </a>            
             </div> 
         </div>    

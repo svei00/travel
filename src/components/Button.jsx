@@ -1,5 +1,3 @@
-import { TbClick } from 'react-icons/tb'
-
 export default function Button({
   width,
   height,
@@ -8,11 +6,13 @@ export default function Button({
   border,
   borderColor,
   fontSize,
-  title,}) {
+  title,
+  icon,}) {
 	return (
     	<button className="btn">
            {title}
-           <TbClick/>
+           {icon}
+           {fontSize}
         </button>
     )
 }

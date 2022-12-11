@@ -5,6 +5,7 @@ import Button from './Button';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { GrClose } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
+import { TbClick } from 'react-icons/tb'
 
 // interface Props {
 //   title: string;
@@ -50,6 +51,7 @@ class Navbar extends Component {
               <div className='center'>
                 <Button
                   title='Sign Up '
+                  icon = {<TbClick/>}
                 />
               </div>
             </div>
