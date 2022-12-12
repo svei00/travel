@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import hero from '../assets/images/riviera_nayarit_002.jpg'
 import Destination from '../components/Destination'
 import { GiBookmarklet } from 'react-icons/gi'
+import Trip from '../components/Trip'
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
             btnClass = 'show'
         />
         <Destination />
+        <Trip />
     </>
   )
 }

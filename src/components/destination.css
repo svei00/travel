@@ -1,6 +1,6 @@
 .destination {
     margin: 4rem 6rem;
-    text-align: justify;
+
 }
 
 .destination h1 {
@@ -14,9 +14,18 @@
     margin-top: 4.5rem;
 }
 
+.descOne-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}
+
 .descTwo {
     width: 45%;
-    text-align: start justify;
+    text-align: start;
+    text-align: justify;
     font-size: 1.1rem;
 }
 
@@ -46,16 +55,33 @@
     right: 0;
 }
 
-@media screen and(max-width: 850px) {
+@media screen and (max-width: 850px) {
     .destination {
         margin: 4rem 2rem;
     }
 
     .descOne {
         display: flex;
-        flex-direction: column ;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 4.5rem;
+        flex-direction: column-reverse;
+        margin-top: 2.5rem;
+    }
+
+    .descOne-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2.5rem;
+    }
+
+    .descTwo {
+        width: 100%;       
+    }
+
+    .pics {
+        width: 100%;
+        margin: 1.8rem 0;
+    }
+
+    .pics img {
+        height: 250px;
     }
 }

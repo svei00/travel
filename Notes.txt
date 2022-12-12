@@ -16,3 +16,4 @@ References:
 * https://devdojo.com/tailwindcss/buttons // Tailwind buttons
 * https://fossheim.io/writing/posts/css-text-gradient/ //Gradient
 * https://unsplash.com/ // Free Images
+* https://www.rivieranayarit.com/
