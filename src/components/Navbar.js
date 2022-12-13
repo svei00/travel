@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { GrClose } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
 import { TbClick } from 'react-icons/tb'
+import { GiPalmTree } from 'react-icons/gi'
 
 // interface Props {
 //   title: string;
@@ -26,7 +27,7 @@ class Navbar extends Component {
 
     return (
       <nav className='items'>
-          <h1 className='logo'>La Estancia de Lupita</h1>
+          <h1 className='logo'>La Estancia de Lupita <GiPalmTree style={{color: 'aquamarine'}}/> </h1>
 
           <div className='icons' onClick={this.handleClick}>
             {this.state.clicked  ? <GrClose /> : <GiHamburgerMenu />}

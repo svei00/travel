@@ -17,3 +17,6 @@ References:
 * https://fossheim.io/writing/posts/css-text-gradient/ //Gradient
 * https://unsplash.com/ // Free Images
 * https://www.rivieranayarit.com/
+* https://codingmasterweb.com/index.php/2021/06/19/social-media-icons-with-gradient-hover-effect/ // Hover effect with gradient
+* https://stackoverflow.com/questions/68214305/react-changing-react-icon-color-on-mouse-hover // Hover Effect in ReacIcons
+* https://www.w3schools.com/css/css3_gradients.asp // Gradients

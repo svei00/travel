@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import service from '../assets/images/service.jpg'
 import { RiServiceLine } from 'react-icons/ri'
+import Footer from '../components/Footer'
 
 function Service() {
   return (
@@ -15,6 +16,7 @@ function Service() {
             icon = {<RiServiceLine style={{color: "white"}}/>} 
             btnClass = 'hidden'
         />
+        <Footer/>
     </>
   )
 }

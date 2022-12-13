@@ -5,6 +5,7 @@ import hero from '../assets/images/riviera_nayarit_002.jpg'
 import Destination from '../components/Destination'
 import { GiBookmarklet } from 'react-icons/gi'
 import Trip from '../components/Trip'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
         />
         <Destination />
         <Trip />
+        <Footer />
     </>
   )
 }
