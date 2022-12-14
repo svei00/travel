@@ -2,7 +2,7 @@ import './footer.css';
 import '../components/navbar.css';
 import React from 'react'
 import { GiPalmTree } from 'react-icons/gi'
-import { SiFacebook, SiGithub, SiInstagram, SiLinkedin, SiTwitter } from 'react-icons/si'
+import { SiFacebook, SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si'
 
 const Footer = () => {
   return (

@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import service from '../assets/images/service.jpg'
 import { RiServiceLine } from 'react-icons/ri'
 import Footer from '../components/Footer'
+import Services from '../components/Services'
 
 function Service() {
   return (
@@ -16,6 +17,7 @@ function Service() {
             icon = {<RiServiceLine style={{color: "white"}}/>} 
             btnClass = 'hidden'
         />
+        <Services />
         <Footer/>
     </>
   )

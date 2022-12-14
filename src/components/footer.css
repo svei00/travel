@@ -43,6 +43,20 @@
     font-size: 1.1rem;
 }
 
+.bottom a:hover {
+    color:#6699cc;
+    font-size: 1.2rem;
+    ;
+}
+
+.bottom a:hover:before {
+    content: '\2192';
+}
+
+.bottom a:hover:after {
+    content: '\2190';
+}
+
 @media screen and (max-width: 850px) {
     .footer {
         padding: 4rem 2rem;
