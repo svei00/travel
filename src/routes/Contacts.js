@@ -4,6 +4,7 @@ import { RiCustomerService2Line } from 'react-icons/ri'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
+import ContactForm from '../components/ContactForm'
 
 function Contacts() {
   return (
@@ -16,6 +17,7 @@ function Contacts() {
             icon = {<RiCustomerService2Line style={{color: "white"}}/>} 
             btnClass = 'hidden'
         />
+        <ContactForm />
         <Footer/>
     </>
   )

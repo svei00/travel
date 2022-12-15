@@ -20,3 +20,5 @@ References:
 * https://codingmasterweb.com/index.php/2021/06/19/social-media-icons-with-gradient-hover-effect/ // Hover effect with gradient
 * https://stackoverflow.com/questions/68214305/react-changing-react-icon-color-on-mouse-hover // Hover Effect in ReacIcons
 * https://www.w3schools.com/css/css3_gradients.asp // Gradients
+* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus 
+* https://stackoverflow.com/questions/46262811/react-icon-does-not-align-with-text // Align react icons
