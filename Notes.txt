@@ -1,4 +1,5 @@
 1. Create React-App with: npx create-react-app my-app
+   Other way: npx react-native init name_of_app
 2. Create folder compoments
    a. Create File Navbar.tsx
    b. Create File navbar.css
@@ -22,3 +23,4 @@ References:
 * https://www.w3schools.com/css/css3_gradients.asp // Gradients
 * https://developer.mozilla.org/en-US/docs/Web/CSS/:focus 
 * https://stackoverflow.com/questions/46262811/react-icon-does-not-align-with-text // Align react icons
+* https://www.youtube.com/watch?v=brcHK3P6ChQ&list=PL0Zuz27SZ-6PRCpm9clX0WiBEMB70FWwd&index=1 // Registration
