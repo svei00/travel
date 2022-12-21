@@ -7,6 +7,7 @@ import { GrClose } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
 import { TbClick } from 'react-icons/tb'
 import { GiPalmTree } from 'react-icons/gi'
+import Modal from './Modal';
 
 // interface Props {
 //   title: string;
@@ -17,14 +18,20 @@ import { GiPalmTree } from 'react-icons/gi'
 
 class Navbar extends Component {
 
+  // const [openModal, setOpenModal] = useState(false); in Component
   state = { clicked: false};
+  state = { openModal: false};
 
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked })
   }
 
-  render() {
+  handleModal = () => {
+    this.setState({ openModal: !this.state.openModal })
+  }
 
+  render() {
+    
     return (
       <nav className='items'>
           <h1 className='logo'>La Estancia de Lupita <GiPalmTree style={{color: 'aquamarine'}}/> </h1>
@@ -53,7 +60,9 @@ class Navbar extends Component {
                 <Button
                   title='Sign Up '
                   icon = {<TbClick/>}
+                  onClick = {this.openModal}
                 />
+                <Modal />
               </div>
             </div>
           </ul>
