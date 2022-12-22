@@ -5,11 +5,12 @@ export default function Button({
   color,
   border,
   borderColor,
+  onClick,
   fontSize,
   title,
   icon,}) {
 	return (
-    	<button className="btn">
+    	<button className="btn" onClick={onClick}>
            {title}
            {icon}
            {fontSize}

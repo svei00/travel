@@ -19,9 +19,8 @@ import Modal from './Modal';
 class Navbar extends Component {
 
   // const [openModal, setOpenModal] = useState(false); in Component
-  state = { clicked: false};
-  state = { openModal: false};
-
+  state = { clicked: false, openModal: false};
+  
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked })
   }
@@ -60,9 +59,11 @@ class Navbar extends Component {
                 <Button
                   title='Sign Up '
                   icon = {<TbClick/>}
-                  onClick = {this.openModal}
+                  onClick = {() => {
+                    this.state.openModal(true);
+                  }}
                 />
-                <Modal />
+                {this.state.openModal && <Modal />}
               </div>
             </div>
           </ul>
