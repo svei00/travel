@@ -10,7 +10,7 @@ export default function Button({
   title,
   icon,}) {
 	return (
-    	<button className="btn" onClick={onClick}>
+    	<button className="btn" onClick>
            {title}
            {icon}
            {fontSize}

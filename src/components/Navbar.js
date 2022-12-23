@@ -59,9 +59,7 @@ class Navbar extends Component {
                 <Button
                   title='Sign Up '
                   icon = {<TbClick/>}
-                  onClick = {() => {
-                    this.state.openModal(true);
-                  }}
+                  onClick = {this.handleModal}
                 />
                 {this.state.openModal && <Modal />}
               </div>
