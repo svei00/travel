@@ -12,6 +12,7 @@ References:
 * https://www.youtube.com/watch?v=0dOSLhPzSGI&t=10s // Main Curse
 * https://www.youtube.com/watch?v=kvkAoCbTM3Q // Alternativas for Create React-App
 * https://www.freecodecamp.org/news/how-to-build-reusable-components-with-props-in-react/ // Rehusable compoments
+* https://codesandbox.io/s/dczs4?file=/src/Components/common/Button/index.js:264-276 // Rehusable Button with props
 * https://webdeasy.de/en/top-css-buttons-en/ // Buttons Examples
 * https://dev.to/webdeasy/top-20-css-buttons-animations-f41 // More Examples
 * https://devdojo.com/tailwindcss/buttons // Tailwind buttons
@@ -24,3 +25,4 @@ References:
 * https://developer.mozilla.org/en-US/docs/Web/CSS/:focus 
 * https://stackoverflow.com/questions/46262811/react-icon-does-not-align-with-text // Align react icons
 * https://www.youtube.com/watch?v=brcHK3P6ChQ&list=PL0Zuz27SZ-6PRCpm9clX0WiBEMB70FWwd&index=1 // Registration
+* https://www.youtube.com/watch?v=ZCvemsUfwPQ&t=701s // Modal

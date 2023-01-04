@@ -16,6 +16,7 @@ function Modal() {
             </section>
             <footer className='footer'>
                 <input type='button'
+                    className='button'
                     value='Cancel' 
                 />
                 <input type='button'

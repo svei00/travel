@@ -1,19 +1,9 @@
-export default function Button({
-  width,
-  height,
-  backgroundColor,
-  color,
-  border,
-  borderColor,
-  onClick,
-  fontSize,
-  title,
-  icon,}) {
+export default function Button(props) {
 	return (
-    	<button className="btn" onClick>
-           {title}
-           {icon}
-           {fontSize}
+    	<button className="btn" onClick={props.clicktHandler}>
+           {props.title}
+           {props.icon}
+           {props.fontSize}
         </button>
     )
 }
