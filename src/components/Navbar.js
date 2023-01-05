@@ -25,7 +25,7 @@ class Navbar extends Component {
     this.setState({ clicked: !this.state.clicked })
   }
 
-  handleModal = (props) => {
+  handleModal = () => {
     this.setState({ openModal: !this.state.openModal })
   }
 
@@ -57,11 +57,12 @@ class Navbar extends Component {
             <div className='container'>
               <div className='center'>
                 <Button
+                  class='button'
                   title='Sign Up '
                   icon = {<TbClick/>}
                   clicktHandler = {this.handleModal}
                 />
-                {this.state.openModal && <Modal />}
+                {this.state.openModal && <Modal openModal={this.setState.openModal} /> }
               </div>
             </div>
           </ul>

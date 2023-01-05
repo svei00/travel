@@ -38,6 +38,7 @@ function ContactForm() {
             <input placeholder='Subject '/>
             <textarea placeholder='Message' rows='4'></textarea>
             <Button
+                class='button'
                 title = 'Send '
                 icon = {<RiMailSendLine />}
             />

@@ -67,7 +67,7 @@
     display: none;
 }
 
-button {
+.button {
     width: 100px;
     height: 40px;
     /* display: flex; */
