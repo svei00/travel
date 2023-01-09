@@ -18,16 +18,16 @@ import Modal from './Modal';
 
 class Navbar extends Component {
 
-  // const [openModal, setOpenModal] = useState(false); in Component
-  state = { clicked: false, openModal: false};
+  // const [openModal, setOpenModal] = useState(false); As a functional Component
+ state = { clicked: false, openModal: false}; // As Class Componet
   
   handleClick = () => {
-    this.setState({ clicked: !this.state.clicked })
-  }
+    this.setState({ clicked: !this.state.clicked });
+  };
 
   handleModal = () => {
-    this.setState({ openModal: !this.state.openModal })
-  }
+    this.setState({ openModal: !this.state.openModal });
+  };
 
   render() {
     
@@ -56,13 +56,7 @@ class Navbar extends Component {
             })}
             <div className='container'>
               <div className='center'>
-                <Button
-                  class='button'
-                  title='Sign Up '
-                  icon = {<TbClick/>}
-                  clicktHandler = {this.handleModal}
-                />
-                {this.state.openModal && <Modal openModal={this.setState.openModal} /> }
+                <Modal />
               </div>
             </div>
           </ul>
