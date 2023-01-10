@@ -1,11 +1,9 @@
 import './navbar.css';
 import { Component, React } from 'react';
 import { MenuItems } from './MenuItems';
-import Button from './Button';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { GrClose } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
-import { TbClick } from 'react-icons/tb'
 import { GiPalmTree } from 'react-icons/gi'
 import Modal from './Modal';
 
