@@ -33,9 +33,10 @@ function Modal() {
                     <div className='container'>
                         <Button 
                             class = 'button'
-                            clicktHandler = {toggleModal}
-                            title = {<GrFormClose />}
+                            
+                            icon = {<GrFormClose />}
                         />
+                        <Register />
                     </div>
                 </div>
             </div>
