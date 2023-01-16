@@ -1,4 +1,5 @@
 import react, { useEffect, useRef, useState } from 'react';
+import { BsInfoCircle } from 'react-icons/bs' 
 
 // User Input Validation
 const user_regex = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}/;
@@ -77,6 +78,13 @@ const Register = () => {
                 onFocus={() => setUserFocus(true)}
                 onBlur={() => setUserFocus(false)}
               />
+              <p id='uidnote' className={userFocus && user && 
+              !validName ? 'instructions' : 'offscreen' }>
+                <BsInfoCircle />
+                 4 to 24 characters <br/>
+                Must begin with a Letter. <br />
+                Letters, numbers, underscores, hyphens allowed.
+              </p>
           </form>
       </section>
     </>
