@@ -29,3 +29,4 @@ References:
 * https://www.geeksforgeeks.org/how-to-send-state-props-to-another-component-in-react-with-onclick/ // How to send state/props to another
 * https://www.youtube.com/watch?v=9DwGahSqcEc
 * https://github.com/Ziratsu/React-modal-yt
+* https://www.youtube.com/watch?v=brcHK3P6ChQ&list=PL0Zuz27SZ-6PRCpm9clX0WiBEMB70FWwd&index=3 // Register Form

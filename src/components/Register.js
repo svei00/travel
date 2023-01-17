@@ -1,5 +1,7 @@
 import react, { useEffect, useRef, useState } from 'react';
 import { BsInfoCircle } from 'react-icons/bs' 
+import { FaCheck, FaTimes } from 'react-icons/fa' 
+import Button from './Button';
 
 // User Input Validation
 const user_regex = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}/;
@@ -23,7 +25,7 @@ const Register = () => {
 
   const [matchPwd, setMatchPwd] = useState('');
   const [validMatch, setValidMatch] = useState(false);
-  const [marchFocus, setMatchFocus] = useState(false);
+  const [matchFocus, setMatchFocus] = useState(false);
 
   const [errMsg, setErrMsg] = useState('');
   const [success, setSuccess] = useState(false);
@@ -65,6 +67,12 @@ const Register = () => {
           <form>
               <label htmlFor='username'>
                 Username:
+                <span className={validName ? 'valid' : 'hide'}>
+                  <FaCheck />
+                </span>
+                <span className={validName || !user ? 'hide' : 'invalid'}>
+                  <FaTimes />
+                </span>
               </label>
               <input 
                 type='text'
@@ -85,6 +93,68 @@ const Register = () => {
                 Must begin with a Letter. <br />
                 Letters, numbers, underscores, hyphens allowed.
               </p>
+
+              <label htmlFor='password'>
+                Password :
+                <span className={validPwd ? 'valid' : 'hide'}>
+                  <FaCheck />
+                </span>
+                <span className={validPwd || !pwd ? 'hide' : 'invalid'}>
+                  <FaTimes />
+                </span>
+              </label>
+              <input 
+                type='password'
+                id='password'
+                onChange={(e) => setPwd(e.target.value)}
+                required
+                aria-invalid={validPwd ? 'false' : 'true'}
+                aria-describedby='pwdnote'
+                onFocus={() => setPwdFocus(true)}
+                onBlur={() => setPwdFocus(false)}
+              />
+              <p id='pwdnote' className={pwdFocus && !validPwd ? 'instructions' : 
+              'offscreen' }>
+                <BsInfoCircle />
+                 8 to 24 characters <br/>
+                Must include uppercase and lowercase letters, a number and a special 
+                character. <br />
+                Allowed special characters:  
+                <span aria-label='exclamation mark'>!</span>
+                <span aria-label='at symbol'>@</span>
+                <span aria-label='hashtag'>#</span>
+                <span aria-label='dollar sign'>$</span>
+                <span aria-label='percent'>%</span>
+              </p>
+
+              <label htmlFor='confirm_pwd'>
+                Confirm Password :
+                <span className={validMatch && matchPwd ? 'valid' : 'hide'}>
+                  <FaCheck />
+                </span>
+                <span className={validMatch || !matchPwd ? 'hide' : 'invalid'}>
+                  <FaTimes />
+                </span>
+              </label>
+              <input 
+                type='password'
+                id='confirm_pwd'
+                onChange={(e) => setMatchPwd(e.target.value)}
+                required
+                aria-invalid={validMatch ? 'false' : 'true'}
+                aria-describedby='confirmnote'
+                onFocus={() => setMatchFocus(true)}
+                onBlur={() => setMatchFocus(false)}
+              />
+              <p id='confirmnote' className={matchFocus && !validMatch ? 'instructions' : 
+              'offscreen' }>
+                <BsInfoCircle />
+                 Passwords must match.
+              </p>
+
+              <button className='button' disabled={!validName || !validPwd || !validMatch ? true : false}>
+                Sign Up
+              </button>
           </form>
       </section>
     </>
