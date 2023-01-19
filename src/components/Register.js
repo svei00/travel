@@ -1,7 +1,6 @@
 import react, { useEffect, useRef, useState } from 'react';
 import { BsInfoCircle } from 'react-icons/bs' 
 import { FaCheck, FaTimes } from 'react-icons/fa' 
-import Button from './Button';
 
 // User Input Validation
 const user_regex = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}/;
@@ -56,15 +55,38 @@ const Register = () => {
     setErrMsg('');
   }, [user, pwd, matchPwd]);
 
+  const handleSubmit = async (e) => {
+    e.prevemtDefault();
+
+    // If button is enabled with JS Hack
+    const v1 = user_regex.test(user);
+    const v2 = pwd_regex.test(pwd);
+    if (!v1 || !v2) {
+      setErrMsg('Invalid Entry');
+      return;
+    }
+    console.log(user, pwd);
+    setSuccess(true);
+  }
+
   return (
     <>
+      {success ? (
+        <section>
+          <h1>Success!</h1>
+          <p>
+            <a href='#'>Sign In</a>
+          </p>
+        </section>
+      ) : (
+
       <section>
           <p ref={errRef} className={errMsg ? 'errmsg' : 
           'offscreen'} aria-live='assertive'>
               {errMsg}
           </p>
           <h1>Register</h1>
-          <form>
+          <form onSubmit={handleSubmit}>
               <label htmlFor='username'>
                 Username:
                 <span className={validName ? 'valid' : 'hide'}>
@@ -156,7 +178,15 @@ const Register = () => {
                 Sign Up
               </button>
           </form>
+          <p>
+            Already registered?<br/>
+            <span>
+              {/* Router right here! */}
+              <a href='#'> Sign in</a>
+            </span>
+          </p>
       </section>
+      )}
     </>
   )
 }

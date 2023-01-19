@@ -8,6 +8,26 @@
    NPM: npm i react-router-dom
    YARN: yarn add react-router-dom 
 
+Register Form Trhrogt Google.
+1. Go to https://console.cloud.google.com/
+2. Search for Credential then go to API & Services.
+3. Create a Project.
+4. Configure OAuth concent screen.
+   a. Choose External
+   b. Choose your email as a developer contact.
+   c. Don't configure scoops.
+   d. Add a test email
+   e. Go to the summary and return to the dashboard.
+5. Create Credential as OAuth Client ID.
+   a. Create it as a web app.
+   b. In autothized Javascript origins use:
+      - http://localhost
+      - http://localhost:3000
+   c. Repeat it in Authorized Redirect.
+   d. Create and save:
+      - Client ID: 271074291629-mj4p3p44fvgaf08p71darrmhloqtivf7.apps.googleusercontent.com
+      - Client Secret: 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
+
 References:
 * https://www.youtube.com/watch?v=0dOSLhPzSGI&t=10s // Main Curse
 * https://www.youtube.com/watch?v=kvkAoCbTM3Q // Alternativas for Create React-App
@@ -30,3 +50,4 @@ References:
 * https://www.youtube.com/watch?v=9DwGahSqcEc
 * https://github.com/Ziratsu/React-modal-yt
 * https://www.youtube.com/watch?v=brcHK3P6ChQ&list=PL0Zuz27SZ-6PRCpm9clX0WiBEMB70FWwd&index=3 // Register Form
+* Register throug Google
