@@ -27,6 +27,9 @@ Register Form Trhrogt Google.
    d. Create and save:
       - Client ID: 271074291629-mj4p3p44fvgaf08p71darrmhloqtivf7.apps.googleusercontent.com
       - Client Secret: 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
+6. On /public/index.html write after title tag: <script src="https://accounts.google.com/gsi/client" async defer></script>
+7. On /src/App.js write the following function:
+   
 
 References:
 * https://www.youtube.com/watch?v=0dOSLhPzSGI&t=10s // Main Curse
