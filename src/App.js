@@ -4,21 +4,8 @@ import Home from './routes/Home';
 import About from './routes/About';
 import Service from './routes/Service';
 import Contacts from './routes/Contacts';
-import { useEffect } from 'react';
 
 function App() {
-
-  function handleCallbackResponse(response) {
-    
-  }
-
-  useEffect(() => {
-    /* Globla Google */
-    google.accounts.id.initialize({
-      client_id: '',
-      callback: handleCallbackResponse
-    });
-  }, []);
 
   return (
     <div className="App">
