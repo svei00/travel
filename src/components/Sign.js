@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import jwt_decode from 'jwt-decoder';
+import jwt_decode from 'jwt-decode';
 
 const google = window.google;
 
@@ -28,10 +28,22 @@ function Sign() {
       );
   
     }, []);
+
+    // If we have no user: Sign in button
+    // If we have user: Show the log out button
   
 
   return (
-    <div>Sign</div>
+    <div>
+        <div id='signInDiv'></div>
+        {
+            user && 
+            <div>
+                <img src={user.picture}></img>
+                <h3>{user.name}</h3>
+            </div>
+        }
+    </div>
   )
 }
 

@@ -4,6 +4,7 @@ import { TbClick } from 'react-icons/tb';
 import Button from './Button';
 import './modal.css';
 import Register from './Register';
+import Sign from './Sign';
 
 function Modal() {
 
@@ -36,7 +37,8 @@ function Modal() {
                             
                             icon = {<GrFormClose />}
                         />
-                        <Register />
+                        {/* <Register /> */}
+                        <Sign />
                     </div>
                 </div>
             </div>

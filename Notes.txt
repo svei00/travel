@@ -50,7 +50,7 @@ Register Form Trhrogt Google.
 
   }, []);
 
-8. Install jwt-decoder as: npm i jwt-decoder
+8. Install jwt-decode as: npm i jwt-decode
 
 References:
 * https://www.youtube.com/watch?v=0dOSLhPzSGI&t=10s // Main Curse
