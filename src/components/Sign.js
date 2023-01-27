@@ -12,13 +12,19 @@ function Sign() {
       console.log('Encode JWT ID Token: ' + response.credential);
       let userObject = jwt_decode(response.credential);
       console.log(userObject);
-      setUser(userObject);    
+      setUser(userObject);
+      // document.getElementById('signInDiv').hidden = true; // hiddens the button    
+    }
+
+    function handleSignOut(event) {
+        setUser({});
+        document.getElementById('signInDiv').hidden = false; // shows the button
     }
   
     useEffect(() => {
       /* Globla Google */
       google.accounts.id.initialize({
-        client_id: '',
+        client_id: '271074291629-mj4p3p44fvgaf08p71darrmhloqtivf7.apps.googleusercontent.com', // Your client id
         callback: handleCallbackResponse
       });
   
@@ -26,7 +32,10 @@ function Sign() {
         document.getElementById('signInDiv'),
         { theme: 'outline', size: 'large' }
       );
-  
+        
+        // If you want to validate throug Chrome
+        // google.accounts.id.prompt();
+
     }, []);
 
     // If we have no user: Sign in button
@@ -36,6 +45,10 @@ function Sign() {
   return (
     <div>
         <div id='signInDiv'></div>
+        { Object.keys(user).length !== 0 &&
+            <button onClick={(e) => handleSignOut(e)}>Sign Out</button>    
+        }
+    
         {
             user && 
             <div>
