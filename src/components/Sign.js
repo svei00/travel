@@ -18,7 +18,7 @@ function Sign() {
 
     function handleSignOut(event) {
         setUser({});
-        document.getElementById('signInDiv').hidden = false; // shows the button
+        // document.getElementById('signInDiv').hidden = false; // shows the button
     }
   
     useEffect(() => {
@@ -44,19 +44,20 @@ function Sign() {
 
   return (
     <div>
-        <div id='signInDiv'></div>
-        { Object.keys(user).length !== 0 &&
+        <div id='signInDiv'> Render?</div>
+        {/* { Object.keys(user).length !== 0 &&
             <button onClick={(e) => handleSignOut(e)}>Sign Out</button>    
-        }
-    
+        } */}
+        
         {
             user && 
             <div>
-                <img src={user.picture}></img>
+                <h1>Do I render?</h1>
+                <img src={user.picture} alt='profile'></img>
                 <h3>{user.name}</h3>
             </div>
         }
-    </div>
+    <div/> 
   )
 }
 

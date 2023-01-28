@@ -10,7 +10,7 @@ function Trip() {
     <div className='trip'>
         <h1>Tours &amp; Excursions</h1>
         <p>You can discover unique destinations in any of out excursions. </p>
-
+        
         <div className='tripcard'>
             <TripData 
                 image = {service1}
