@@ -1,6 +1,8 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import jwt_decode from 'jwt-decode';
+import './trip.css';
+import './sign.css';
 
 const google = window.google;
 
@@ -43,7 +45,7 @@ function Sign() {
   
 
   return (
-    <div>
+    <div className='trip'>
         <div id='signInDiv'> Render?</div>
         {/* { Object.keys(user).length !== 0 &&
             <button onClick={(e) => handleSignOut(e)}>Sign Out</button>    
@@ -57,7 +59,7 @@ function Sign() {
                 <h3>{user.name}</h3>
             </div>
         }
-    <div/> 
+    </div> 
   )
 }
 
