@@ -36,7 +36,6 @@ function Trip() {
                 horseback riding tours - we've done them ourselves and loved every minute!  A great cruise shore excursion or part of 
                 your vacation in Puerto Vallarta.  Let's go horseback riding."
             />
-            <Sign />
         </div>
     </div>
   )
