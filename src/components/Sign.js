@@ -18,10 +18,10 @@ function Sign() {
       // document.getElementById('signInDiv').hidden = true; // hiddens the button    
     }
 
-    function handleSignOut(event) {
-        setUser({});
-        // document.getElementById('signInDiv').hidden = false; // shows the button
-    }
+    // function handleSignOut(event) {
+    //     setUser({});
+    //     // document.getElementById('signInDiv').hidden = false; // shows the button
+    // }
   
     useEffect(() => {
       /* Globla Google */
