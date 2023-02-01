@@ -75,3 +75,5 @@ References:
 * https://github.com/Ziratsu/React-modal-yt
 * https://www.youtube.com/watch?v=brcHK3P6ChQ&list=PL0Zuz27SZ-6PRCpm9clX0WiBEMB70FWwd&index=3 // Register Form
 * https://www.youtube.com/watch?v=roxC8SMs7HU // Register throug Google
+* https://www.youtube.com/watch?v=zkz2HuNR_gk // Auth Google and Fakebook
+* https://webdevpuneet.com/css-animation-color-blinking/#gsc.tab=0 // Colorfool text/background

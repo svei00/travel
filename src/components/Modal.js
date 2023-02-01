@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { GrFormClose } from 'react-icons/gr';
 import { TbClick } from 'react-icons/tb';
 import Button from './Button';
+import Coming from './Coming';
 import './modal.css';
-import Sign from './Sign';
 
 function Modal() {
 
@@ -31,13 +31,9 @@ function Modal() {
             <div className='modal'>
                 <div onClick={toggleModal} className='overlay'> {/* // Overlay means to put it in gray/black, etc */}
                     <div className='container'>
-                        <Button 
-                            class = 'button'
-                            
-                            icon = {<GrFormClose />}
-                        />
+                        
                         {/* <Register /> */}
-                        <Sign />
+                        <Coming />
                     </div>
                 </div>
             </div>
