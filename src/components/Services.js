@@ -4,7 +4,6 @@ import service2 from '../assets/images/service2.jpg';
 import service3 from '../assets/images/service3.jpg';
 import React from 'react'
 import TripData from './TripData';
-import Sign from './Sign';
 
 function Trip() {
   return (
