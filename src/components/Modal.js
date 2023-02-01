@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { GrFormClose } from 'react-icons/gr';
 import { TbClick } from 'react-icons/tb';
 import Button from './Button';
 import Coming from './Coming';
